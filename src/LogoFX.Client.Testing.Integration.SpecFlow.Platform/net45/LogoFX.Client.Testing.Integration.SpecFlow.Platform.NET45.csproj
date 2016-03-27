@@ -31,8 +31,8 @@
     <DocumentationFile>..\..\Bin\net45\Release\LogoFX.Client.Testing.Integration.SpecFlow.Platform.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Attest.Fake.Builders, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Attest.Fake.Builders.1.1.0\lib\portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0\Attest.Fake.Builders.dll</HintPath>
+    <Reference Include="Attest.Fake.Builders, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Attest.Fake.Builders.1.1.1\lib\portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0\Attest.Fake.Builders.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Attest.Fake.Core, Version=1.0.8.0, Culture=neutral, processorArchitecture=MSIL">
@@ -43,12 +43,12 @@
       <HintPath>..\..\packages\Attest.Fake.Registration.1.0.9\lib\portable-net45+wpa8+win8\Attest.Fake.Registration.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Attest.Testing.Core, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Attest.Tests.Core.1.1.2\lib\portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0\Attest.Testing.Core.dll</HintPath>
+    <Reference Include="Attest.Testing.Core, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Attest.Tests.Core.1.2.0\lib\portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0\Attest.Testing.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Attest.Testing.SpecFlow, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Attest.Tests.SpecFlow.1.1.2\lib\portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0\Attest.Testing.SpecFlow.dll</HintPath>
+    <Reference Include="Attest.Testing.SpecFlow, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Attest.Tests.SpecFlow.1.2.0\lib\portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0\Attest.Testing.SpecFlow.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="LogoFX.Client.Core, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
@@ -71,8 +71,8 @@
       <HintPath>..\..\packages\shim.1.0.2.50909\lib\net45\Shim.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Solid.Practices.IoC, Version=1.0.8.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Solid.Practices.IoC.1.0.8\lib\portable-net45+wpa8+win8\Solid.Practices.IoC.dll</HintPath>
+    <Reference Include="Solid.Practices.IoC, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Solid.Practices.IoC.1.1.1\lib\portable-net45+wpa8+win8+MonoAndroid+MonoTouch+uap10.0\Solid.Practices.IoC.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Solid.Practices.Scheduling, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
