@@ -6,7 +6,7 @@ using Solid.Practices.IoC;
 namespace LogoFX.Client.Testing.Integration.SpecFlow
 {
     /// <summary>
-    /// Base class for client integration tests.
+    /// Base class for client integration tests that use SpecFlow as test engine.
     /// </summary>
     /// <typeparam name="TRootObject">The type of the root object.</typeparam>
     /// <typeparam name="TBootstrapper">The type of the bootstrapper.</typeparam>
@@ -35,7 +35,7 @@ namespace LogoFX.Client.Testing.Integration.SpecFlow
     }
 
     /// <summary>
-    /// Base class for client integration tests.
+    /// Base class for client integration tests that use SpecFlow as test engine.
     /// </summary>
     /// <typeparam name="TContainer">The type of the ioc container.</typeparam>
     /// <typeparam name="TContainerAdapter">The type of the ioc container adapter.</typeparam>
