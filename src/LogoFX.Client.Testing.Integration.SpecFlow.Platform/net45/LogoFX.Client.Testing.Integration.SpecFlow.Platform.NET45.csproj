@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LogoFX.Client.Testing.Integration.SpecFlow</RootNamespace>
     <AssemblyName>LogoFX.Client.Testing.Integration.SpecFlow.Platform</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -60,12 +60,12 @@
       <HintPath>..\..\packages\LogoFX.Client.Core.1.0.8\lib\net45\LogoFX.Client.Core.Platform.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="LogoFX.Client.Testing.Infra.Platform, Version=1.0.6.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\LogoFX.Client.Tests.Shared.1.0.6\lib\net45\LogoFX.Client.Testing.Infra.Platform.dll</HintPath>
+    <Reference Include="LogoFX.Client.Testing.Infra.Platform, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\LogoFX.Client.Tests.Shared.1.0.7\lib\net45\LogoFX.Client.Testing.Infra.Platform.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="LogoFX.Client.Testing.Shared.Platform, Version=1.0.6.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\LogoFX.Client.Tests.Shared.1.0.6\lib\net45\LogoFX.Client.Testing.Shared.Platform.dll</HintPath>
+    <Reference Include="LogoFX.Client.Testing.Shared.Platform, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\LogoFX.Client.Tests.Shared.1.0.7\lib\net45\LogoFX.Client.Testing.Shared.Platform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Solid.Bootstrapping, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
