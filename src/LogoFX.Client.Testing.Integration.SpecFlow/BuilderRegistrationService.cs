@@ -15,5 +15,5 @@ namespace LogoFX.Client.Testing.Integration.SpecFlow
         {
             RegisterBuilder(builder);
         }
-    }
+    }   
 }
