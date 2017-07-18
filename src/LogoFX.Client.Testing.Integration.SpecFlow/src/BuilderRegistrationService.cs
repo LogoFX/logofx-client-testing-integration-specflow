@@ -11,7 +11,7 @@ namespace LogoFX.Client.Testing.Integration.SpecFlow
     /// <seealso cref="IBuilderRegistrationService" />
     public class BuilderRegistrationService : StepsBase, IBuilderRegistrationService
     {
-        void IBuilderRegistrationService.RegisterBuilder<TService>(FakeBuilderBase<TService> builder)
+        void IBuilderRegistrationService.RegisterBuilder<TService>(IBuilder<TService> builder)
         {
             RegisterBuilder(builder);
         }
