@@ -1,6 +1,6 @@
-﻿using Attest.Fake.Builders;
-using Attest.Testing.SpecFlow;
+﻿using Attest.Testing.SpecFlow;
 using LogoFX.Client.Testing.Contracts;
+using Solid.Patterns.Builder;
 
 namespace LogoFX.Client.Testing.Integration.SpecFlow
 {
