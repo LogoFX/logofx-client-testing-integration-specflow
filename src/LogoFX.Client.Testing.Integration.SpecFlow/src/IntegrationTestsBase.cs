@@ -13,7 +13,7 @@ namespace LogoFX.Client.Testing.Integration.SpecFlow
     public abstract class IntegrationTestsBase<TRootObject, TBootstrapper> :
         Attest.Testing.SpecFlow.IntegrationTestsBase<TRootObject, TBootstrapper>
         where TRootObject : class
-        where TBootstrapper : IInitializable, IHaveContainerRegistrator, IHaveContainerResolver, new()
+        where TBootstrapper : IInitializable, IHaveRegistrator, IHaveResolver, new()
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="IntegrationTestsBase{TRootObject,TBootstrapper}"/> class.
