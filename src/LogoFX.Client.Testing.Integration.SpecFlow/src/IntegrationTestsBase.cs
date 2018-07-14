@@ -32,6 +32,21 @@ namespace LogoFX.Client.Testing.Integration.SpecFlow
             base.SetupOverride();
             TestHelper.Setup();
         }
+
+        /// <summary>
+        /// Base class for client integration tests that use SpecFlow as test engine and have 
+        /// the explicit root object creation flow.
+        /// </summary>
+        public class WithExplicitRootObjectCreation : Attest.Testing.SpecFlow.IntegrationTestsBase<TRootObject,
+            TBootstrapper>.WithExplicitRootObjectCreation
+        {
+            /// <inheritdoc />            
+            protected override void SetupOverride()
+            {
+                base.SetupOverride();
+                TestHelper.Setup();
+            }
+        }
     }
 
     /// <summary>
