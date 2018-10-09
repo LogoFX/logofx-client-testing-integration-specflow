@@ -13,7 +13,7 @@ namespace LogoFX.Client.Testing.Integration.SpecFlow
     {
         void IBuilderRegistrationService.RegisterBuilder<TService>(IBuilder<TService> builder)
         {
-            RegisterBuilder(builder);
+            RegisterBuilderProduct(builder);
         }
     }   
 }
