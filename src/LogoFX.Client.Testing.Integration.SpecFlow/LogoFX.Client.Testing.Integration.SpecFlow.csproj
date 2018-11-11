@@ -27,11 +27,11 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\Bin\net\Release\</OutputPath>
+    <OutputPath>..\Bin\net\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\..\Bin\net\Release\LogoFX.Client.Testing.Integration.SpecFlow.xml</DocumentationFile>
+    <DocumentationFile>..\Bin\net\Release\LogoFX.Client.Testing.Integration.SpecFlow.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
@@ -39,11 +39,9 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\src\BuilderRegistrationService.cs">
-      <Link>BuilderRegistrationService.cs</Link>
+    <Compile Include="BuilderRegistrationService.cs">      
     </Compile>
-    <Compile Include="..\src\IntegrationTestsBase.cs">
-      <Link>IntegrationTestsBase.cs</Link>
+    <Compile Include="IntegrationTestsBase.cs">     
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

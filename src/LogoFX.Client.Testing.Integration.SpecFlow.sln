@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogoFX.Client.Testing.Integration.SpecFlow.NET", "LogoFX.Client.Testing.Integration.SpecFlow\net\LogoFX.Client.Testing.Integration.SpecFlow.NET.csproj", "{695046A7-3DD8-49D8-A2C4-1369A1EF784F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogoFX.Client.Testing.Integration.SpecFlow", "LogoFX.Client.Testing.Integration.SpecFlow\LogoFX.Client.Testing.Integration.SpecFlow.csproj", "{695046A7-3DD8-49D8-A2C4-1369A1EF784F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
