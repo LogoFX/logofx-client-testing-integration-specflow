@@ -1,76 +1,25 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{695046A7-3DD8-49D8-A2C4-1369A1EF784F}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LogoFX.Client.Testing.Integration.SpecFlow</RootNamespace>
-    <AssemblyName>LogoFX.Client.Testing.Integration.SpecFlow</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <Version>2.0.0</Version>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\Bin\netstandard2.0\Release</OutputPath>
+    <DocumentationFile>..\Bin\netstandard2.0\Release\LogoFX.Client.Testing.Integration.SpecFlow.xml</DocumentationFile>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>full</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>..\Bin\net\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\Bin\net\Release\LogoFX.Client.Testing.Integration.SpecFlow.xml</DocumentationFile>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
+    <PackageReference Include="Attest.Testing.Contracts" Version="2.0.0-rc3" />
+    <PackageReference Include="Attest.Tests.Core" Version="2.0.0-rc7" />
+    <PackageReference Include="Attest.Tests.SpecFlow" Version="2.0.0-rc7" />
+    <PackageReference Include="LogoFX.Client.Tests.Shared" Version="2.0.0-rc3" />
+    <PackageReference Include="Solid.Core" Version="2.1.0" />
+    <PackageReference Include="Solid.Patterns.Builder" Version="2.1.0" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="BuilderRegistrationService.cs">
-    </Compile>
-    <Compile Include="IntegrationTestsBase.cs">
-    </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Attest.Testing.Contracts">
-      <Version>2.0.0-rc3</Version>
-    </PackageReference>
-    <PackageReference Include="Attest.Tests.Core">
-      <Version>2.0.0-rc6</Version>
-    </PackageReference>
-    <PackageReference Include="Attest.Tests.SpecFlow">
-      <Version>2.0.0-rc6</Version>
-    </PackageReference>
-    <PackageReference Include="LogoFX.Client.Tests.Shared">
-      <Version>2.0.0-rc3</Version>
-    </PackageReference>
-    <PackageReference Include="Solid.Core">
-      <Version>2.1.0</Version>
-    </PackageReference>
-    <PackageReference Include="Solid.Patterns.Builder">
-      <Version>2.1.0</Version>
-    </PackageReference>
-    <PackageReference Include="Solid.Practices.IoC">
-      <Version>2.1.0</Version>
-    </PackageReference>
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
 </Project>
