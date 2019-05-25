@@ -25,9 +25,7 @@ namespace LogoFX.Client.Testing.Integration.SpecFlow
         {
         }
 
-        /// <summary>
-        /// Provides additional opportunity to modify the test setup logic.
-        /// </summary>
+        /// <inheritdoc />
         protected override void SetupOverride()
         {
             base.SetupOverride();
@@ -73,9 +71,7 @@ namespace LogoFX.Client.Testing.Integration.SpecFlow
         {
         }
 
-        /// <summary>
-        /// Provides additional opportunity to modify the test setup logic.
-        /// </summary>
+        /// <inheritdoc />
         protected override void SetupOverride()
         {
             base.SetupOverride();
