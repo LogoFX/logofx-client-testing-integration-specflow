@@ -3,6 +3,7 @@ using LogoFX.Client.Testing.Shared;
 using Solid.Bootstrapping;
 using Solid.Core;
 using Solid.Practices.IoC;
+using ScenarioContext = TechTalk.SpecFlow.ScenarioContext;
 
 namespace LogoFX.Client.Testing.Integration.SpecFlow
 {
@@ -19,9 +20,12 @@ namespace LogoFX.Client.Testing.Integration.SpecFlow
         /// <summary>
         /// Initializes a new instance of the <see cref="IntegrationTestsBase{TRootObject,TBootstrapper}"/> class.
         /// </summary>
+        /// <param name="scenarioContext">The scenario context.</param>
         /// <param name="resolutionStyle">The resolution style.</param>
-        protected IntegrationTestsBase(InitializationParametersResolutionStyle resolutionStyle = InitializationParametersResolutionStyle.PerRequest)
-            : base(resolutionStyle)
+        protected IntegrationTestsBase(
+            ScenarioContext scenarioContext,
+            InitializationParametersResolutionStyle resolutionStyle = InitializationParametersResolutionStyle.PerRequest)
+            : base(scenarioContext, resolutionStyle)
         {
         }
 
@@ -39,6 +43,11 @@ namespace LogoFX.Client.Testing.Integration.SpecFlow
         public class WithExplicitRootObjectCreation : Attest.Testing.SpecFlow.IntegrationTestsBase<TRootObject,
             TBootstrapper>.WithExplicitRootObjectCreation
         {
+            public WithExplicitRootObjectCreation(ScenarioContext scenarioContext):
+                base(scenarioContext)
+            {
+                    
+            }
             /// <inheritdoc />            
             protected override void SetupOverride()
             {
@@ -65,9 +74,12 @@ namespace LogoFX.Client.Testing.Integration.SpecFlow
         /// <summary>
         /// Initializes a new instance of the <see cref="IntegrationTestsBase{TRootObject,TBootstrapper}"/> class.
         /// </summary>
+        /// <param name="scenarioContext">The scenario context.</param>
         /// <param name="resolutionStyle">The resolution style.</param>
-        protected IntegrationTestsBase(InitializationParametersResolutionStyle resolutionStyle = InitializationParametersResolutionStyle.PerRequest)
-            : base(resolutionStyle)
+        protected IntegrationTestsBase(
+            ScenarioContext scenarioContext,
+            InitializationParametersResolutionStyle resolutionStyle = InitializationParametersResolutionStyle.PerRequest)
+            : base(scenarioContext, resolutionStyle)
         {
         }
 
