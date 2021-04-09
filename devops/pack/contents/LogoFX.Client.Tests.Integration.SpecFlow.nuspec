@@ -22,5 +22,5 @@
       <dependency id="Attest.Tests.SpecFlow" version="2.1.0-rc2" />
       <dependency id="LogoFX.Client.Tests.Shared" version="2.2.0-rc2" />
     </dependencies>
-  </metadata>  
+  </metadata>
 </package>
