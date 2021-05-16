@@ -14,12 +14,12 @@
     <summary>LogoFX Client Testing Integration SpecFlow containing base class for unit and integration tests which are based on SpecFlow.</summary>
     <releaseNotes>Updated dependent packages</releaseNotes>
     <dependencies>
-      <dependency id="Solid.Practices.IoC" version="2.3.0-rc1" />
-      <dependency id="Solid.Patterns.Builder" version="2.3.0-rc1" />
-      <dependency id="Solid.Core" version="2.3.0-rc1" />
-      <dependency id="Attest.Testing.Contracts" version="2.1.0-rc3" />
-      <dependency id="Attest.Tests.Core" version="2.1.0-rc3" />
-      <dependency id="Attest.Tests.SpecFlow" version="2.1.0-rc3" />
+      <dependency id="Solid.Practices.IoC" version="2.3.0" />
+      <dependency id="Solid.Patterns.Builder" version="2.3.0" />
+      <dependency id="Solid.Core" version="2.3.0" />
+      <dependency id="Attest.Testing.Contracts" version="2.1.1" />
+      <dependency id="Attest.Tests.Core" version="2.1.1" />
+      <dependency id="Attest.Tests.SpecFlow" version="2.1.1" />
       <dependency id="LogoFX.Client.Tests.Shared" version="2.2.0-rc2" />
     </dependencies>
   </metadata>
