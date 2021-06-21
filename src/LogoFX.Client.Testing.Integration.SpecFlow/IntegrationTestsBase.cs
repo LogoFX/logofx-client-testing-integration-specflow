@@ -3,7 +3,7 @@ using LogoFX.Client.Testing.Shared;
 using Solid.Bootstrapping;
 using Solid.Core;
 using Solid.Practices.IoC;
-using ScenarioContext = TechTalk.SpecFlow.ScenarioContext;
+using TechTalk.SpecFlow;
 
 namespace LogoFX.Client.Testing.Integration.SpecFlow
 {
@@ -13,7 +13,7 @@ namespace LogoFX.Client.Testing.Integration.SpecFlow
     /// <typeparam name="TRootObject">The type of the root object.</typeparam>
     /// <typeparam name="TBootstrapper">The type of the bootstrapper.</typeparam>
     public abstract class IntegrationTestsBase<TRootObject, TBootstrapper> :
-        Attest.Testing.SpecFlow.IntegrationTestsBase<TRootObject, TBootstrapper>
+        Attest.Testing.Integration.SpecFlow.IntegrationTestsBase<TRootObject, TBootstrapper>
         where TRootObject : class
         where TBootstrapper : IInitializable, IHaveRegistrator, IHaveResolver, new()
     {
@@ -40,9 +40,14 @@ namespace LogoFX.Client.Testing.Integration.SpecFlow
         /// Base class for client integration tests that use SpecFlow as test engine and have 
         /// the explicit root object creation flow.
         /// </summary>
-        public class WithExplicitRootObjectCreation : Attest.Testing.SpecFlow.IntegrationTestsBase<TRootObject,
+        public class WithExplicitRootObjectCreation : 
+            Attest.Testing.Integration.SpecFlow.IntegrationTestsBase<TRootObject,
             TBootstrapper>.WithExplicitRootObjectCreation
         {
+            /// <summary>
+            /// Initializes a new instance of the <see cref="IntegrationTestsBase{TRootObject,TBootstrapper}.WithExplicitRootObjectCreation"/> class.
+            /// </summary>
+            /// <param name="scenarioContext">The scenario context.</param>
             public WithExplicitRootObjectCreation(ScenarioContext scenarioContext):
                 base(scenarioContext)
             {
@@ -64,9 +69,9 @@ namespace LogoFX.Client.Testing.Integration.SpecFlow
     /// <typeparam name="TContainerAdapter">The type of the ioc container adapter.</typeparam>
     /// <typeparam name="TRootObject">The type of the root object.</typeparam>
     /// <typeparam name="TBootstrapper">The type of the bootstrapper.</typeparam>
-    /// <seealso cref="Attest.Testing.SpecFlow.IntegrationTestsBase{TContainer, TContainerAdapter, TRootObject, TBootstrapper}" />
+    /// <seealso cref="Attest.Testing.Integration.SpecFlow.IntegrationTestsBase{TContainer, TContainerAdapter, TRootObject, TBootstrapper}" />
     public abstract class IntegrationTestsBase<TContainer, TContainerAdapter, TRootObject, TBootstrapper> :
-        Attest.Testing.SpecFlow.IntegrationTestsBase<TContainer, TContainerAdapter, TRootObject, TBootstrapper>
+        Attest.Testing.Integration.SpecFlow.IntegrationTestsBase<TContainer, TContainerAdapter, TRootObject, TBootstrapper>
         where TContainerAdapter : class, IIocContainer, IIocContainerAdapter<TContainer>
         where TRootObject : class
         where TBootstrapper : IInitializable, IHaveContainer<TContainer>, new()
