@@ -12,7 +12,7 @@
     <iconUrl>https://github.com/LogoFX/logofx-assets/blob/master/icons/icon.png?raw=true</iconUrl>
     <description>LogoFX Client Testing Integration SpecFlow containing base class for unit and integration tests which are based on SpecFlow.</description>
     <summary>LogoFX Client Testing Integration SpecFlow containing base class for unit and integration tests which are based on SpecFlow.</summary>
-    <releaseNotes>Updated dependent packages</releaseNotes>
+    <releaseNotes>Added support for parallel run via scenario context.</releaseNotes>
     <dependencies>
       <dependency id="Solid.Practices.IoC" version="2.3.1" />
       <dependency id="Solid.Patterns.Builder" version="2.3.1" />
@@ -22,5 +22,7 @@
       <dependency id="Attest.Tests.SpecFlow" version="2.3.2" />
       <dependency id="LogoFX.Client.Tests.Shared" version="2.2.0" />
     </dependencies>
+    <tags>framework logofx dotnet</tags>
+    <repository type="Open Source" url="https://github.com/LogoFX/logofx-client-testing-integration-specflow" />
   </metadata>
 </package>
