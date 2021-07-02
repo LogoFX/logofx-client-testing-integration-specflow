@@ -3,6 +3,8 @@ Base integration tests and builder registration service implementation for SpecF
 
 <img src=https://ci.appveyor.com/api/projects/status/github/logofx/logofx-client-testing-integration-specflow>
 
+[![CodeFactor](https://www.codefactor.io/repository/github/logofx/logofx-client-testing-integration-specflow/badge/master)](https://www.codefactor.io/repository/github/logofx/logofx-client-testing-integration-specflow/overview/master)
+
 <img src=https://img.shields.io/nuget/dt/LogoFX.Client.Tests.Integration.SpecFlow>
 
 [Get package](https://www.nuget.org/packages/LogoFX.Client.Tests.Integration.SpecFlow)
