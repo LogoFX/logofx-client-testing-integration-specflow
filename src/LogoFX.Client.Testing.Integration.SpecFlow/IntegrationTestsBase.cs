@@ -2,7 +2,6 @@
 using LogoFX.Client.Testing.Shared;
 using Solid.Bootstrapping;
 using Solid.Core;
-using Solid.Practices.IoC;
 using TechTalk.SpecFlow;
 
 namespace LogoFX.Client.Testing.Integration.SpecFlow
