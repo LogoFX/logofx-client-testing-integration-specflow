@@ -1,5 +1,5 @@
 ﻿using Attest.Fake.Registration;
-using Attest.Testing.Contracts;
+using Attest.Testing.FakeData;
 using Solid.Patterns.Builder;
 using Solid.Practices.IoC;
 
