@@ -8,3 +8,5 @@ Base integration tests and builder registration service implementation for SpecF
 <img src=https://img.shields.io/nuget/dt/LogoFX.Client.Tests.Integration.SpecFlow>
 
 [Get package](https://www.nuget.org/packages/LogoFX.Client.Tests.Integration.SpecFlow)
+
+This repository is archived. Its functionality has been moved to https://github.com/LogoFX/testing
